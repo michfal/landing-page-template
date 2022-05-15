@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Test Assignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  </head>
+  <body id="body">
+    <header class="hero">
+      <h1 class="hero__header">
+        Lorem ipsum<br />
+        <span class="hero__header hero__header--big">Donec Accumsan</span>
+      </h1>
+      <h2 class="hero__subheader">
+        Donec pretium nibh vel faucibus imperdiet, <br />
+        Morbi accumsan malesuada risus quis vehicula.
+      </h2>
+      <a class="hero__button j-hero_button">SCROLL</a>
+    </header>
+    <main>
+      <article class="content_main">
+        <p class="paragraph paragraph--dropcap j-scroll" data-animated = 'none'>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla molestie sem vel mollis lobortis. Aenean ante felis, dictum eget metus vel, luctus eleifend nisi. Donec accumsan congue mauris, ut sodales massa consectetur id. Suspendisse ante nisi, tincidunt non vehicula ut, sagittis in libero. Integer vel ante at lacus vestibulum feugiat. Curabitur lectus dui, efficitur eget bibendum eget, commodo dictum sapien. Sed at mi non purus aliquet aliquam. Praesent id laoreet nisi, dictum mattis ipsum. Cras vehicula lacus odio, varius aliquet sapien feugiat quis. Aenean luctus porttitor arcu in tempus. Nunc tincidunt ligula eu placerat efficitur. Mauris a velit magna. In aliquet tortor ac purus vestibulum, quis suscipit risus blandit. Aenean malesuada ipsum sed nibh malesuada dignissim.
+        </p>
+        <p class="paragraph j-scroll j-right" data-animated = 'none'>
+          Donec pretium nibh vel faucibus imperdiet. Morbi accumsan malesuada risus quis vehicula. Sed elementum turpis in lobortis sagittis. Duis fermentum a quam quis ullamcorper. Aliquam ut libero et eros rhoncus iaculis sed id tortor. Quisque quis tincidunt nibh. Vestibulum ut lacinia mi, quis eleifend enim.
+        </p>
+
+        <figure class="content_figure j-scroll" data-animated = 'none'>
+          <img
+            class="content_figure__image"
+            src="./images/content/quote-img2.png"
+          />
+          <div class="content_figure__text">
+            <p>&#8220</p>
+            <blockquote class="content_figure__text_quote">
+              Nunc quis porta arcu, in commodo orci. Aliquam nec sollicitudin nisi, eget congue ante."
+            </blockquote>
+            <figcaption class="content_figure__text_author">
+              Duis pharetra vulputate ante sed ultricies. Praesent fermentum, purus sit amet
+            </figcaption>
+          </div>
+        </figure>
+
+        <p class="paragraph j-scroll j-right" data-animated = 'none'>
+          Nunc quis porta arcu, in commodo orci. Aliquam nec sollicitudin nisi, eget congue ante. Vestibulum volutpat nisl et lorem hendrerit viverra. Nunc blandit molestie nisi sed fermentum. Duis pretium lorem leo, non fermentum libero fringilla sit amet. Nam vitae velit sollicitudin, pretium ex quis, venenatis lectus. Nunc quis suscipit tellus, quis rutrum lacus. Vivamus eget velit non nisi lobortis mollis.
+        </p>
+      </article>
+
+      <section class="content_bottom">
+        <article>
+          <h3 class="content_bottom__header">Fusce nec ex ipsum. <br> Cras fermentum metus nec risus porta faucibus.</h3>
+          <p class="paragraph paragraph--footer">
+            Fusce nec ex ipsum. Cras fermentum metus nec risus porta faucibus. Vestibulum scelerisque, metus vel efficitur malesuada, tellus libero mollis nisi, et congue tellus velit a libero. Nullam pellentesque purus et lectus aliquam dictum. Vivamus vel magna enim. Mauris dictum neque quis quam aliquet porttitor. Integer imperdiet quis urna sit amet semper. Morbi porttitor sit amet erat volutpat vehicula. Nam eget ante non augue porttitor vehicula. Sed tincidunt in sem non scelerisque. Donec sed aliquam dui.
+          </p>
+        </article>
+        
+        <div class="slider">
+
+          <div class="slider__content">
+
+            <div class="slide">
+              <div class="slide__image_container">
+                <img
+                class="slide__image slide__image--image1 j-slide_image"
+                src="./images/content/slider1-img.png"
+                />
+                <img
+                class="slide__image slide__image--image2 j-slide_image hidden"
+                src="./images/content/slider2-img.png"
+                />
+                <img
+                class="slide__image slide__image--image3 j-slide_image hidden"
+                src="./images/content/slider3-img.png"
+                />
+                <!-- <img
+                class="slide__image slide__image--image4 j-slide_image hidden"
+                src="./images/content/slider4-img.png"
+                /> -->
+              </div>
+
+              <div class="text_container text_container--left">
+                <h4 class="text_container__header">From</h4>
+
+                <p class="text_container__text j-slide_txt_left ">
+                  Praesent massa massa, cursus tincidunt ante at
+                </p>
+
+                <p class="text_container__text j-slide_txt_left hidden">
+                  Quisque non venenatis nulla, non tempus ipsum.
+                </p>
+
+                <p class="text_container__text j-slide_txt_left hidden">
+                  Suspendisse nec rhoncus lorem, nec feugiat purus.
+                </p>
+                
+                <p class="text_container__text j-slide_txt_left hidden">
+                  Suspendisse nibh risus, sodales quis neque vel, euismod efficitur ex.
+                </p>
+
+              </div>
+
+              <div class="arrow">➞</div>
+
+              <div class="text_container">
+                <h4 class="text_container__header">
+                  To
+                </h4>
+
+                <p class="text_container__text j-slide_txt_right">
+                  Nam a sapien sed justo dictum venenatis.
+                </p>
+
+                <p class="text_container__text j-slide_txt_right hidden">
+                  Mauris quis massa at tortor semper facilisis. 
+                </p>
+                
+                <p class="text_container__text j-slide_txt_right hidden">
+                  Maecenas sit amet augue aliquet metus porta eleifend.  
+                </p>
+                
+                <p class="text_container__text j-slide_txt_right hidden">
+                  Vivamus commodo lectus in massa condimentum placerat.  
+                </p>
+              </div>
+              
+            </div>
+          </div>
+
+          
+
+          <div class="slider__bg"></div>
+          <div class="slider__buttons">
+            <button class="slider__buttons_element j-slider_button select">1</button>
+            <button class="slider__buttons_element j-slider_button">2</button>
+            <button class="slider__buttons_element j-slider_button">3</button>
+            <button class="slider__buttons_element j-slider_button">4</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

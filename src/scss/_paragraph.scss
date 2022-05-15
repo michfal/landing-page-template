@@ -1,0 +1,22 @@
+.paragraph {
+  width: 46%;
+  color: $gray;
+  // font-family: 'Roboto', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 4rem;
+  margin: auto auto 3rem auto;
+  &--footer {
+    text-align: center;
+  }
+}
+
+.paragraph--dropcap::first-letter {
+  color: $purple;
+  float: left;
+  font-size: 12rem;
+  line-height: 7rem;
+  font-weight: 700;
+  margin: 0.1em 0.1em 0.2em 0;
+}

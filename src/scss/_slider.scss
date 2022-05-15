@@ -1,0 +1,126 @@
+.slider {
+  width: 64%;
+  height: 55rem;
+  margin: auto;
+  padding-bottom: 10rem;
+  position: relative;
+  &__content {
+    height: 100%;
+  }
+  &__bg {
+    background-color: $white;
+    height: 65%;
+    width: 98%;
+    position: absolute;
+    top: 10%;
+    left: 2%;
+    border-radius: 2rem;
+  }
+  &__buttons {
+    width: 40rem;
+    color: $purple;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    &_element {
+      width: 4rem;
+      height: 4rem;
+      font-size: 2.5rem;
+      font-weight: 700;
+      border: none;
+      background-color: transparent;
+      color: $purple;
+      cursor: pointer;
+      padding-top: 0.4rem;
+      &:hover {
+        transform: scale(1.2);
+        transition: transform 0.3s ease-out;
+      }
+    }
+  }
+}
+
+.slide {
+  // border: 1px solid green;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  height: 35rem;
+  align-items: center;
+  &__image_container {
+    width: 35rem;
+    height: 100%;
+    position: relative;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    background-color: $purple;
+    width: 90%;
+    height: 0.3rem;
+    bottom: -2rem;
+    left: 5%;
+  }
+}
+
+.slide__image {
+  position: absolute;
+  z-index: 2;
+  width: 30rem;
+  top: 15%;
+}
+
+.text_container {
+  width: 25rem;
+  margin: 15rem auto auto auto;
+  position: relative;
+  height: 20rem;
+  &__header {
+    color: $purple;
+    font-size: 2.6rem;
+    font-weight: 900;
+  }
+  &__text {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    position: absolute;
+    &--em {
+      font-size: 2rem;
+      font-weight: 900;
+      color: $purple;
+    }
+  }
+  &--left {
+    margin-left: 0;
+  }
+}
+
+.arrow {
+  font-size: 6rem;
+  color: $purple;
+  padding: 5rem 5rem 0 0;
+}
+
+.source_info {
+  font-size: 1.5rem;
+  z-index: 1;
+  position: absolute;
+  color: $light-gray;
+  text-align: center;
+  margin: 6rem 25%;
+  width: 50%;
+}
+
+.select {
+  color: $white;
+  width: 4rem;
+  height: 4rem;
+  background-color: $purple;
+  border-radius: 50%;
+}
+
+.hidden {
+  opacity: 0;
+}

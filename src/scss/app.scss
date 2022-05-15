@@ -1,0 +1,15 @@
+/* Core variables */
+@import 'base/vars';
+
+/* CSS Reset */
+@import 'base/reset';
+
+@import 'base/animations';
+
+@import 'base/typography';
+
+/* Page styles */
+@import 'hero';
+@import 'paragraph';
+@import 'content';
+@import 'slider';
