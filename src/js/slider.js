@@ -9,7 +9,6 @@ const buttons = document.querySelectorAll('.j-slider_button');
 const images = document.querySelectorAll('.j-slide_image');
 const textsLeft = document.querySelectorAll('.j-slide_txt_left');
 const textsRight = document.querySelectorAll('.j-slide_txt_right');
-console.log(images);
 
 function animateObjects(current, next) {
   //animate out

@@ -1,9 +1,9 @@
 {
   "author": "MichalFal",
-  "name": "@wp/wp-test-assignment",
+  "name": "@lt/landing-page-template",
   "version": "1.0.0",
-  "description": "Test assignment based on template Webpack with SASS/PostCSS and babel ES6/7 support.",
-  "homepage": "https://github.com/michfal/huncwot-test-assignment.git",
+  "description": "Landing PAge Template based on Webpack with SASS/PostCSS and babel ES6/7 support.",
+  "homepage": "https://https://github.com/michfal/landing-page-template",
   "browserslist": [
     "last 2 versions",
     "> 5%"
@@ -54,7 +54,7 @@
   "private": false,
   "repository": {
     "type": "git",
-    "url": "git@github.com:michfal/huncwot-test-assignment.git"
+    "url": "git@github.com:michfal/landing-page-template"
   },
   "scripts": {
     "build": "webpack --config configuration/webpack.dev.config.js --mode=development",
