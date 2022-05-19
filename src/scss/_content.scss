@@ -1,6 +1,6 @@
 .content_main {
   margin: 14rem auto;
-  font-family: 'Roboto', sans-serif;
+  // font-family: 'Roboto', sans-serif;
 }
 
 .content_figure {
@@ -33,7 +33,6 @@
     }
   }
   &__image {
-    // height: 100%;
     width: 50%;
   }
   &::before {
@@ -49,12 +48,10 @@
 
 .content_bottom {
   min-height: 80vh;
-  // background-image: url(../images/design/bg-texture.jpg);
   background-color: $light-green;
   padding-top: 1rem;
   &__header {
     color: $purple;
-    // font-family: 'Roboto', sans-serif;
     font-size: 2.6rem;
     font-weight: 900;
     text-align: center;
