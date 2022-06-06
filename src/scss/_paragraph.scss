@@ -20,7 +20,7 @@
   margin: 0.1em 0.1em 0 0;
 }
 
-@media (min-width: $tablets) {
+@media (min-width: $small-screens) {
   .paragraph {
     width: 46%;
     font-size: 2.2rem;
