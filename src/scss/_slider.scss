@@ -1,6 +1,5 @@
 .slider {
-  width: 64%;
-  height: 55rem;
+  width: 100%;
   margin: auto;
   padding-bottom: 10rem;
   position: relative;
@@ -9,44 +8,40 @@
   }
   &__bg {
     background-color: $white;
-    height: 65%;
-    width: 98%;
+    height: 70%;
+    width: 80%;
     position: absolute;
-    top: 10%;
-    left: 2%;
+    top: 5%;
+    left: 10%;
     border-radius: 2rem;
   }
   &__buttons {
-    width: 40rem;
+    width: 90%;
     color: $purple;
     text-align: center;
-    margin: auto;
+    margin: 4rem auto 0 auto;
     display: flex;
     justify-content: space-around;
     &_element {
-      width: 4rem;
-      height: 4rem;
-      font-size: 2.5rem;
+      width: 3rem;
+      height: 3rem;
+      font-size: 2rem;
       font-weight: 700;
       border: none;
       background-color: transparent;
       color: $purple;
       cursor: pointer;
-      padding-top: 0.4rem;
-      &:hover {
-        transform: scale(1.2);
-        transition: transform 0.3s ease-out;
-      }
+      padding-top: 0.2rem;
     }
   }
 }
 
 .slide {
-  // border: 1px solid green;
   position: relative;
   z-index: 2;
   display: flex;
-  height: 35rem;
+  flex-direction: column;
+  height: 50rem;
   align-items: center;
   &__image_container {
     width: 35rem;
@@ -67,60 +62,112 @@
 .slide__image {
   position: absolute;
   z-index: 2;
-  width: 30rem;
+  width: 15rem;
   top: 15%;
+  left: calc(50% - 7.5rem);
 }
 
 .text_container {
   width: 25rem;
-  margin: 15rem auto auto auto;
+  height: 30rem;
+  margin: auto;
   position: relative;
-  height: 20rem;
   &__header {
     color: $purple;
-    font-size: 2.6rem;
+    font-size: 2rem;
     font-weight: 900;
   }
   &__text {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 700;
     margin-top: 1rem;
     position: absolute;
-    &--em {
-      font-size: 2rem;
-      font-weight: 900;
-      color: $purple;
-    }
   }
   &--left {
-    margin-left: 0;
+    margin-left: auto;
   }
 }
 
 .arrow {
   font-size: 6rem;
   color: $purple;
-  padding: 5rem 5rem 0 0;
-}
-
-.source_info {
-  font-size: 1.5rem;
-  z-index: 1;
-  position: absolute;
-  color: $light-gray;
-  text-align: center;
-  margin: 6rem 25%;
-  width: 50%;
-}
-
-.select {
-  color: $white;
-  width: 4rem;
-  height: 4rem;
-  background-color: $purple;
-  border-radius: 50%;
 }
 
 .hidden {
   opacity: 0;
+}
+
+@media (min-width: $tablets) {
+  .slider {
+    width: 64%;
+    height: 55rem;
+    &__content {
+      height: 100%;
+    }
+    &__bg {
+      height: 65%;
+      width: 98%;
+      top: 10%;
+      left: 2%;
+    }
+    &__buttons {
+      width: 40rem;
+      margin: auto;
+      &_element {
+        width: 4rem;
+        height: 4rem;
+        font-size: 2.5rem;
+        padding-top: 0.4rem;
+        &:hover {
+          transform: scale(1.2);
+          transition: transform 0.3s ease-out;
+        }
+      }
+    }
+  }
+  .slide {
+    flex-direction: row;
+    height: 35rem;
+    &__image_container {
+      width: 25rem;
+      margin-right: 1rem;
+    }
+  }
+  .slide__image {
+    width: 20rem;
+    top: 25%;
+    left: 0;
+  }
+
+  .text_container {
+    margin: 15rem auto auto auto;
+    height: 20rem;
+    &__header {
+      font-size: 2.6rem;
+    }
+    &__text {
+      font-size: 2rem;
+    }
+    &--left {
+      margin-left: 0;
+    }
+  }
+
+  .arrow {
+    font-size: 6rem;
+    padding: 5rem 5rem 0 0;
+  }
+}
+
+.select {
+  color: $white;
+  width: 3rem;
+  height: 3rem;
+  background-color: $purple;
+  border-radius: 50%;
+  @media (min-width: $tablets) {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+  }
 }

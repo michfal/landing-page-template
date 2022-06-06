@@ -11,11 +11,9 @@ export function scrollPage() {
 
 function animateHeaders(element) {
   let startPosition = -200;
-
   if (element.classList.contains('j-right')) {
     startPosition = 200;
   }
-
   gsap.from(element, { x: startPosition, duration: 1 });
 }
 
